@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,35 +8,64 @@
 
     <p> teste muito ruim</p>
 
-    <script> 
+    <script>
 
-    var nome_do_carro = "fusca";
+        var nome_do_carro = "fusca";
+        alert(nome_do_carro);
 
-    alert(nome_do_carro);
+        var nome = prompt("Informe o seu nome, por favor: ");
+        alert("Olá, " + nome + "!");
 
-   
+        var nome = prompt("Informe o seu nome novamente, por favor: ");
+        var idade = prompt("Informe a sua idade, por favor: ");
+        alert("Olá, " + nome + " sua idade é " + idade);
 
-    
+        // Calcular a area do retangulo
+        var base = prompt("Digite a base do retangulo");
+        var altura = prompt("Digite a altura do retangulo");
+        var area = base * altura;
+        alert("A área do retangulo é: " + area);
+
+        // Calcular a area do quadrado
+        var base = prompt("Digite a base do quadrado");
+        var altura = prompt("Digite a altura do quadrado");
+        var area = base * altura;
+        alert("A área do quadrado é: " + area);
+
+        // Calcular a area do losango
+        var diagonal_maior = prompt("Digite o valor da diagonal maior do losango");
+        var diagonal_menor = prompt("Digite o valor da diagonal menor do losango");
+        var area = diagonal_maior * diagonal_menor / 2;
+        alert("A área do losango é: " + area);
+
+        var base_maior = number(prompt("Digite o valor da base maior do trapézio"));
+        var base_menor = number(prompt("Digite o valor da base menor do trapézio"));
+        var altura = prompt("Digite a altura do trapézio");
+        var area = (base_maior + base_menor) * altura / 2;
+        alert("A área do trapézio é: " + area);
 
 
 
 
-    
 
 
 
 
 
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
     </script>
 
 
@@ -43,10 +73,12 @@
 
 
 </head>
+
 <body>
 
 
 
-    
+
 </body>
+
 </html>
