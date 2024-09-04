@@ -23,7 +23,7 @@
         }
 
         //aça um programa que leia um valor informado pelo usuário e diga se o valor informado é positivo, negativo ou zero.
-        
+
         var valor_do_numero = Number(prompt("Digite o valor"));
 
         if (valor_do_numero > 0) {
@@ -37,8 +37,19 @@
             alert("o valor é igual a 0");
         }
 
+        //Faça um programa para ler 3 valores (considere que não serão informados valores iguais) e escrever o maior deles.
+
+        var primeiro_numero = Number(prompt("Digite o primeiro número"));
+        var segundo_numero = Number(prompt("Digite o segundo número"));
+        var terceiro_numero = Number(prompt("Digite o terceiro número"));
+
+        if (primeiro_numero > segundo_numero && primeiro_numero > terceiro_numero) {
+            alert(" o maior valor é " + primeiro_numero);
+
+        } else if (segundo_numero > primeiro_numero && segundo_numero > terceiro_numero) {
+            alert(" o maior valor é " + segundo_numero);
 
 
-
-
-
+        } else if (terceiro_numero > primeiro_numero && terceiro_numero > segundo_numero) {
+            alert(" o maior valor é " + terceiro_numero);
+        }
