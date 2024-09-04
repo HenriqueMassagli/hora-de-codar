@@ -53,3 +53,62 @@
         } else if (terceiro_numero > primeiro_numero && terceiro_numero > segundo_numero) {
             alert(" o maior valor é " + terceiro_numero);
         }
+
+
+        //Faça um programa que leia 3 valores informados pelo usuário (considere que não serão informados valores iguais) e escrever a soma dos 2 maiores.
+
+        var numero_um = Number(prompt("Digite o primeiro número"));
+        var numero_dois = Number(prompt("Digite o segundo número"));
+        var numero_tres = Number(prompt("Digite o terceiro número"));
+        var soma
+
+        if (numero_um >= numero_dois && numero_um >= numero_tres) {
+
+            if (numero_dois >= numero_tres) {
+
+                soma = numero_um + numero_dois;
+            } else {
+
+                soma = numero_um + numero_tres;
+            }
+
+
+        } else if (numero_dois >= numero_um && numero_dois >= numero_tres) {
+
+            if (numero_um >= numero_tres) {
+
+                soma = numero_dois + numero_um;
+            } else {
+
+                soma = numero_dois + numero_tres;
+            }
+
+
+        } else {
+
+            if (numero_um >= numero_dois) {
+
+                soma = numero_tres + numero_um;
+            } else {
+
+                soma = numero_tres + numero_dois;
+            }
+        }
+
+        alert("A soma dos dois maiores números é " + soma);
+
+
+
+
+
+
+
+        
+
+    
+
+        
+
+
+
+
