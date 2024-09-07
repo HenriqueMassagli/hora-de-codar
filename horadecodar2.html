@@ -144,7 +144,7 @@
 
         }
 
-        //Faça um programa que leia 6 números que o usuário vai informar. Todos os números lidos com valor inferior a 72 devem ser somados. Escreva o valor final da soma efetuada e também todos valores que o usuário informou.
+        //7-Faça um programa que leia 6 números que o usuário vai informar. Todos os números lidos com valor inferior a 72 devem ser somados. Escreva o valor final da soma efetuada e também todos valores que o usuário informou.
 
         var numberdo1 = Number(prompt("Digite o primeiro número"));
         var numberdo2 = Number(prompt("Digite o segundo número"));
@@ -174,8 +174,31 @@
         }
 
         alert("A soma dos números menores que 72 é: " + soma)
-        
-        
+
+        //8-Escreva um programa que calcule a média de quatro números informados pelo usuário, mas somente se esses números forem maiores que 0 e menores que 10. No final, se a média for maior que cinco o usuário receberá uma mensagem "Você passou no teste". Em qualquer outra situação, ele receberá uma mensagem de "tente novamente"
+
+        var numberdu1 = Number(prompt("Digite o primeiro número"));
+        var numberdu2 = Number(prompt("Digite o segundo número"));
+        var numberdu3 = Number(prompt("Digite o terceiro número"));
+        var numberdu4 = Number(prompt("Digite o quarto número"));
+
+        if (numberdu1 > 0 && numberdu1 < 10 &&
+            numberdu2 > 0 && numberdu2 < 10 &&
+            numberdu3 > 0 && numberdu3 < 10 &&
+            numberdu4 > 0 && numberdu4 < 10); {
+
+            var media_aritmetica_2 = (numberdu1 + numberdu2 + numberdu3 + numberdu4) / 4;
+
+            if (media_aritmetica_2 > 5) {
+                alert("Você passou no teste");
+            } else {
+                alert("Tente novamente");
+            }
+
+        }
+
+
+
 
 
 
