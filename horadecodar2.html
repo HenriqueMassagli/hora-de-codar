@@ -37,6 +37,7 @@
             alert("o valor é igual a 0");
         }
 
+
         //3-Faça um programa para ler 3 valores (considere que não serão informados valores iguais) e escrever o maior deles.
 
         var primeiro_numero = Number(prompt("Digite o primeiro número"));
@@ -52,6 +53,7 @@
 
         } else if (terceiro_numero > primeiro_numero && terceiro_numero > segundo_numero) {
             alert(" o maior valor é " + terceiro_numero);
+
         }
 
 
@@ -98,6 +100,7 @@
         alert("A soma dos dois maiores números é " + soma);
 
 
+
         //5-Faça um programa que leia 6 valores informados pelo usuário, calcule, exiba os números informados e escreva a média aritmética desses valores lidos.
 
         var number1 = Number(prompt("Digite o primeiro número"));
@@ -108,6 +111,10 @@
         var number6 = Number(prompt("Digite o sexto número"));
 
         var media_aritmetica = (number1 + number2 + number3 + number4 + number5 + number6) / 6;
+
+        alert("Os valores informados foram: " + number1 + ", " + number2 + ", " + number3 + ", " + number4 + ", " + number5 + ", " + number6 + ". A respectiva média aritmética é: " + media_aritmetica);
+
+
 
         //6-Faça um programa que receba quatro valores informados pelo usuário, mas informe somente o primeiro, o último e o maior de todos eles (considere que todos os números informados serão diferentes)
 
@@ -173,9 +180,11 @@
             soma += numberdo6;
         }
 
-        alert("A soma dos números menores que 72 é: " + soma)
+        alert("A soma dos números menores que 72 é: " + soma + ". " + "Os numeros informados foram: " + numberdo1 + ", " + numberdo2 + ", " + numberdo3 + ", " + numberdo4 + ", " + numberdo5 + ", " + numberdo6 + ". ")
+
 
         //8-Escreva um programa que calcule a média de quatro números informados pelo usuário, mas somente se esses números forem maiores que 0 e menores que 10. No final, se a média for maior que cinco o usuário receberá uma mensagem "Você passou no teste". Em qualquer outra situação, ele receberá uma mensagem de "tente novamente"
+
 
         var numberdu1 = Number(prompt("Digite o primeiro número"));
         var numberdu2 = Number(prompt("Digite o segundo número"));
@@ -197,6 +206,7 @@
 
         }
 
+
         //9-Escreva um programa para ler o ano de nascimento de uma pessoa e escrever uma mensagem que diga se ela poderá ou não votar este ano (não é necessário considerar o mês em que ela nasceu).
 
         var ano_do_nascimento = Number(prompt("Digite o ano de nascimento:"));
@@ -206,19 +216,36 @@
         var idade = ano_atual - ano_do_nascimento
 
 
-
         if (idade < 16) {
 
-            alert("você não poderá votar este ano");
+            alert("você não poderá votar este ano.");
         }
 
         else if (idade > 16) {
 
-            alert("você poderá votar este ano");
+            alert("você poderá votar este ano.");
         }
 
 
+        //10-Tendo como entrada a altura e o gênero designado ao nascer (codificado da seguinte forma: 1: feminino - 2: masculino - ) de uma pessoa, construa um programa que calcule e imprima seu peso ideal, utilizando as seguintes fórmulas.
 
+        var altura = Number(prompt("digite sua altura:").replace(",", "."));
+
+        var genero = Number(prompt("Digite o gênero (1 para feminino, 2 para masculino):"));
+
+        var peso_ideal;
+
+        if (genero === 1) {
+            peso_ideal = (62.1 * altura) - 44.7;
+
+            alert("Seu peso ideal é " + peso_ideal.toFixed(2) + " " + "kg");
+
+        } else if (genero === 2) {
+            peso_ideal = (72.7 * altura) - 58;
+
+            alert("seu peso ideal é " + peso_ideal.toFixed(2) + " " + "kg");
+
+        }
 
 
 
