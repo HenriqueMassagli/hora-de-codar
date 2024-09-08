@@ -247,6 +247,34 @@
 
         }
 
+        //11-Uma micro calculadora. Escreva um programa para ler 2 valores inteiros informados pelo usuário e uma das seguintes operações a serem executadas (codificada da seguinte forma: 1. Adição, 2. Subtração, 3. Divisão, 4. Multiplicação).
+
+        var operacao = Number(prompt("Ecolha 1 operação para realizar: (1- para adição, 2- para subtração, 3- para divisão e 4- para multiplicação)"))
+        var valor_do_1 = Number(prompt("digite o primeiro número:").replace(",", "."));
+        var valor_do_2 = Number(prompt("digite o segundo número:").replace(",", "."));
+        var resultado
+
+        if (operacao === 1) {
+            resultado = valor_do_1 + valor_do_2;
+            alert("O resultado da adição é: " + resultado);
+
+        } else if (operacao === 2) {
+            resultado = valor_do_1 - valor_do_2;
+            alert("O resultado da subtração é: " + resultado);
+
+        } else if (operacao === 3) {
+            if (valor_do_2 !== 0) {
+                resultado = valor_do_1 / valor_do_2;
+                alert("O resultado da divisão é: " + resultado);
+            } else {
+                alert("Falha. Não é possivel realizar divisão com 0.");
+            }
+
+        } else if (operacao === 4) {
+            resultado = valor_do_1 * valor_do_2;
+            alert("O resultado da multiplicação é: " + resultado);
+        }
+
 
 
 
