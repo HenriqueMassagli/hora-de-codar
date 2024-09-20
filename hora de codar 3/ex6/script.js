@@ -21,10 +21,9 @@ function calcularMediaEVerificarAprovacao() {
 function iniciarPrograma() {
   var continuar = "S";
 
-  while (continuar.toUpperCase() === "S"|| ) {
+  while (continuar.toUpperCase() === "S") {
     calcularMediaEVerificarAprovacao();
-    continuar = prompt("Calcular a média de outro aluno Sim/Não?");
-  if()
+    continuar = prompt("Calcular a média de outro aluno S/N?");
   }
 
   alert("Quantidade de alunos aprovados: " + alunosAprovados);
