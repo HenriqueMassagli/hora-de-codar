@@ -1,3 +1,5 @@
+//5 - Faça um algoritmo que calcule e escreva a média aritmética dos dois números inteiros informados pelo usuário e todos os números inteiros entre eles. Considere que o primeiro sempre será menor que o segundo.
+
 var primeiro_numero = parseInt(prompt("Informe o primeiro número inteiro:"));
 var segundo_numero = parseInt(prompt("Informe o segundo número inteiro:"));
 
